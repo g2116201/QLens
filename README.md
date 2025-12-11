@@ -9,6 +9,11 @@ The contents of this repositiory are divided into three overarching folders, eac
 - `Amazon_Books/`
 - `Tiny_Stories/`
 
+<!--
+Each of these folders contains the following broad classess of content:
+**Jupyter Notebooks**: A sequence of notebooks splits the code for its associated experiments into multiple thematic segments.
+-->
+
 ### Sentihood Folder
 The `Sentihood/` folder contains experiments conducted on the [Sentihood](https://aclanthology.org/C16-1146.pdf) dataset. Its substructure breaks down as follows:
 
@@ -30,3 +35,16 @@ The `Sentihood/` folder contains experiments conducted on the [Sentihood](https:
 - `Figures/`: Contains visualizations produced by the Sentihood notebooks and is split into two subfolders
     - `Attention_Layer/`: Houses the figures associated with the attention layer of the trained Sentihood Transformer.
     - `MLP_Layer/`: Houses the figures associated with the MLP layer of the trained Sentihood Transformer.
+ 
+### Amazon Books Folder
+The `Amazon_Books/` folder contains experiments conducted on the [Amazon Books](https://aclanthology.org/D19-1018.pdf) subset of the larger Amazon Review dataset. Substructure:
+
+**Jupyter Notebooks**:
+- `001_Books_Model_Training.iypnb`: Prepocesses a subset of the 50,000 most active users to 5-core and trains a Transformer (self-attentive sequential recommender) with one encoder block on the resulting corupus.
+- `002_Books_Lens_Training.iypnb`: Prepares two Tuned Lenses for extracting intermediate probability distributions from the Amazon Books model.
+- `003_Books_Quantum_Analysis.iypnb`: Implements QLens' mathematical framework on the Amazon Books model.
+  
+**Figures Subfolder**
+- `Figures/`: Contains visualizations derived by applying QLens to the Amazon Books Transformer .
+    - `Attention_Layer/`: Houses figures associated with the attention layer.
+    - `MLP_Layer/`: Houses figures associated with the MLP layer.
