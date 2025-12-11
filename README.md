@@ -16,7 +16,7 @@ The `Sentihood` folder contains experiments conducted on the [Sentihood](https:/
 - `002_Model_Training.iypnb`: Trains a base Transformer comprising of one encoder block on the preprocessed Sentihood dataset.
 - `003_Lens_Training.iypnb`: Prepares two Tuned Lenses for extracting intermediate output probability distributions from the Sentihood Transformer.
 - `004_Quantum_Analysis.iypnb`: Employs QLens' mathematical framework to derive and analyze analogous quantum vectors and operators extracted from the Sentihood Transformer.
-- 
+
 **Python Files**: These contain modules or helpful functions that are imported by the notebooks above when needed.
 - `transformer_model.py`: Contains Sentihood Transformer class.
 - `transformer_dataset.py`: Defines the dataset class used to train the Sentihood Transformer.
