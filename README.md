@@ -26,7 +26,7 @@ The `Sentihood/` folder contains experiments conducted on the [Sentihood](https:
 - `sub_models.py`: Contains classes for parital models of the Sentihood Transformer that used to obtain intermediate hidden states.
 - `utils.py`: Includes various helper functions
 
-**Subfolder**
+**Figures Subfolder**
 - `Figures/`: Contains visualizations produced by the Sentihood notebooks and is split into two subfolders
     - `Attention_Layer/`: Houses the figures associated with the attention layer of the trained Sentihood Transformer.
     - `MLP_Layer/`: Houses the figures associated with the MLP layer of the trained Sentihood Transformer.
