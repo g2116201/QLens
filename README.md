@@ -15,7 +15,7 @@ Each of these folders contains the following broad classess of content:
 -->
 
 ### Sentihood Folder
-The `Sentihood/` folder contains experiments conducted on the [Sentihood](https://aclanthology.org/C16-1146.pdf) dataset. Its substructure breaks down as follows:
+The `Sentihood/` folder contains experiments conducted on the [Sentihood](https://aclanthology.org/C16-1146.pdf) sentiment classification dataset. Its substructure breaks down as follows:
 
 **Jupyter Notebooks**: This sequence of notebooks split the code into multiple thematic segments. 
 - `001_Data_Preprocessing.iypnb`: Simplifies task to simple positive or negative sentiment prediction.
@@ -37,7 +37,7 @@ The `Sentihood/` folder contains experiments conducted on the [Sentihood](https:
     - `MLP_Layer/`: Houses the figures associated with the MLP layer of the trained Sentihood Transformer.
  
 ### Amazon Books Folder
-The `Amazon_Books/` folder contains experiments conducted on the [Amazon Books](https://aclanthology.org/D19-1018.pdf) subset of the larger Amazon Review dataset. Substructure:
+The `Amazon_Books/` folder contains experiments conducted on the [Amazon Books](https://aclanthology.org/D19-1018.pdf) recommendation dataset, a subset of the larger Amazon Review dataset. Substructure:
 
 **Jupyter Notebooks**:
 - `001_Books_Model_Training.iypnb`: Prepocesses a subset of the 50,000 most active users to 5-core and trains a Transformer (self-attentive sequential recommender) with one encoder block on the resulting corupus.
@@ -45,6 +45,18 @@ The `Amazon_Books/` folder contains experiments conducted on the [Amazon Books](
 - `003_Books_Quantum_Analysis.iypnb`: Implements QLens' mathematical framework on the Amazon Books model.
   
 **Figures Subfolder**
-- `Figures/`: Contains visualizations derived by applying QLens to the Amazon Books Transformer .
+- `Figures/`: Contains visualizations obtained by applying QLens to the Amazon Books Transformer.
+    - `Attention_Layer/`: Houses figures associated with the attention layer.
+    - `MLP_Layer/`: Houses figures associated with the MLP layer.
+
+### Tiny Stories Folder
+The `Tiny_Stories/` folder holds the experiments conducted using the [Tiny Stories](https://arxiv.org/pdf/2305.07759) text generation dataset and the pre-trained [Tiny Stories one enocder block Transformer](https://huggingface.co/roneneldan/TinyStories-1Layer-21M). Substructure:
+
+**Jupyter Notebooks**:
+- `001_Stories_Lens_Training.iypnb`: Loads the pre-trained Tiny Stories model and trains two Tuned Lenses on it.
+- `002_Stories_Quantum_Analysis.iypnb`: Performs QLens' analysis on the Tiny Stories model.
+  
+**Figures Subfolder**
+- `Figures/`: Contains QLens-derived visualizations.
     - `Attention_Layer/`: Houses figures associated with the attention layer.
     - `MLP_Layer/`: Houses figures associated with the MLP layer.
