@@ -9,19 +9,14 @@ The contents of this repositiory are divided into three overarching folders, eac
 - `Amazon_Books/`
 - `Tiny_Stories/`
 
-<!--
-Each of these folders contains the following broad classess of content:
-**Jupyter Notebooks**: A sequence of notebooks splits the code for its associated experiments into multiple thematic segments.
--->
-
 ### Sentihood Folder
 The `Sentihood/` folder contains experiments conducted on the [Sentihood](https://aclanthology.org/C16-1146.pdf) sentiment classification dataset. Its substructure breaks down as follows:
 
 **Jupyter Notebooks**: This sequence of notebooks split the code into multiple thematic segments. 
-- `001_Data_Preprocessing.iypnb`: Simplifies task to simple positive or negative sentiment prediction.
-- `002_Model_Training.iypnb`: Trains a base Transformer comprising of one encoder block on the preprocessed Sentihood dataset.
-- `003_Lens_Training.iypnb`: Prepares two Tuned Lenses for extracting intermediate output probability distributions from the Sentihood Transformer.
-- `004_Quantum_Analysis.iypnb`: Employs QLens' mathematical framework to derive and analyze analogous quantum vectors and operators extracted from the Sentihood Transformer.
+- `001_Sentihood_Data_Preprocessing.iypnb`: Simplifies task to simple positive or negative sentiment prediction.
+- `002_Sentihood_Model_Training.iypnb`: Trains a base Transformer comprising of one encoder block on the preprocessed Sentihood dataset.
+- `003_Sentihood_Lens_Training.iypnb`: Prepares two Tuned Lenses for extracting intermediate output probability distributions from the Sentihood Transformer.
+- `004_Sentihood_Quantum_Analysis.iypnb`: Employs QLens' mathematical framework to derive and analyze analogous quantum vectors and operators extracted from the Sentihood Transformer.
 
 **Python Files**: These contain modules or helpful functions that are imported by the notebooks above when needed.
 - `transformer_model.py`: Contains Sentihood Transformer class.
