@@ -8,3 +8,21 @@ The contents of this repositiory are divided into three overarching folders, eac
 - `Sentihood`
 - `Amazon_Books`
 - `Tiny_Stories`
+
+The `Sentihood` folder contains experiments conducted on the [Sentihood](https://aclanthology.org/C16-1146.pdf) dataset. Its substructure breaks down as follows:
+**Jupyter Notebooks**: This sequence of notebooks split the code into multiple thematic segments. 
+- `001_Data_Preprocessing.iypnb`: Simplifies task to simple positive or negative sentiment prediction.
+- `002_Model_Training.iypnb`: Trains a base Transformer comprising of one encoder block on the preprocessed Sentihood dataset.
+- `003_Lens_Training.iypnb`: Prepares two Tuned Lenses for extracting intermediate output probability distributions from the Sentihood Transformer.
+- `004_Quantum_Analysis.iypnb`: Employs QLens' mathematical framework to derive and analyze analogous quantum vectors and operators extracted from the Sentihood Transformer.
+**Python Files**: These contain modules or helpful functions that are imported by the notebooks above when needed.
+- `transformer_model.py`: Contains Sentihood Transformer class.
+- `transformer_dataset.py`: Defines the dataset class used to train the Sentihood Transformer.
+- `tuned_lens.py`: Prepares the class for the Tuned Lenses trained to extract intermediate output probability distributions.
+- `lens_dataset.py`: Houses the dataset used to train the Tuned Lenes.
+- `sub_models.py`: Contains classes for parital models of the Sentihood Transformer that used to obtain intermediate hidden states.
+- `utils.py`: Includes various helper functions 
+**Subfolder**
+- `Figures`: Contains visualizations produced by the Sentihood notebooks and is split into two subfolders
+    - `Attention_Layer`: Houses the figures associated with the attention layer of the trained Sentihood Transformer.
+    - MLP_Layer: Houses the figures associated with the MLP layer of the trained Sentihood Transformer.
