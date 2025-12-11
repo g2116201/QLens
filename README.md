@@ -5,11 +5,12 @@ This repository contains the code for the developing quantum-inspired interpreta
 
 ## Repository Layout
 The contents of this repositiory are divided into three overarching folders, each of which contains code for one of the three datasets used to test QLens:
-- `Sentihood`
-- `Amazon_Books`
-- `Tiny_Stories`
+- `Sentihood/`
+- `Amazon_Books/`
+- `Tiny_Stories/`
 
-The `Sentihood` folder contains experiments conducted on the [Sentihood](https://aclanthology.org/C16-1146.pdf) dataset. Its substructure breaks down as follows:
+### Sentihood Folder
+The `Sentihood/` folder contains experiments conducted on the [Sentihood](https://aclanthology.org/C16-1146.pdf) dataset. Its substructure breaks down as follows:
 
 **Jupyter Notebooks**: This sequence of notebooks split the code into multiple thematic segments. 
 - `001_Data_Preprocessing.iypnb`: Simplifies task to simple positive or negative sentiment prediction.
@@ -26,6 +27,6 @@ The `Sentihood` folder contains experiments conducted on the [Sentihood](https:/
 - `utils.py`: Includes various helper functions
 
 **Subfolder**
-- `Figures`: Contains visualizations produced by the Sentihood notebooks and is split into two subfolders
+- `Figures/`: Contains visualizations produced by the Sentihood notebooks and is split into two subfolders
     - `Attention_Layer`: Houses the figures associated with the attention layer of the trained Sentihood Transformer.
     - MLP_Layer: Houses the figures associated with the MLP layer of the trained Sentihood Transformer.
