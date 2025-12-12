@@ -45,7 +45,7 @@ The `Amazon_Books/` folder contains experiments conducted on the [Amazon Books](
     - `MLP_Layer/`: Houses figures associated with the MLP layer.
 
 ### Tiny Stories Folder
-The `Tiny_Stories/` folder holds the experiments conducted using the [Tiny Stories](https://arxiv.org/pdf/2305.07759) text generation dataset and the pre-trained [Tiny Stories one enocder block Transformer](https://huggingface.co/roneneldan/TinyStories-1Layer-21M). Substructure:
+The `Tiny_Stories/` folder holds the experiments conducted using the [Tiny Stories](https://arxiv.org/pdf/2305.07759) text generation dataset and the pre-trained [Tiny Stories one enocder block Transformer](https://huggingface.co/roneneldan/TinyStories-1Layer-21M). Contents:
 
 **Jupyter Notebooks**:
 - `001_Stories_Lens_Training.iypnb`: Loads the pre-trained Tiny Stories model and trains two Tuned Lenses on it.
