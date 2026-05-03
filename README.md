@@ -3,11 +3,42 @@ This repository contains the code for the developing quantum-inspired interpreta
 
 **Abstract:** Existing methods for analyzing the self-attention mechanism operate by extracting intermediate output probability distributions between layers during the inference process. However, these methods function as limited diagnostic checkpoints and lack a mathematical framework for modeling how layers transition between these distributions. To address this gap, we present QLens, a novel framework that uses theoretical foundations of quantum mechanics to model the evolving inter-layer probability distributions within a transformer. Under QLens, these models are studied by converting their latent activations into a state vector in a Hilbert space, derived from their output values. The evolution of this state through subsequent hidden layers is analyzed with unitary operators and analogously defined Hamiltonians. To demonstrate the potential of QLens, we conduct a proof-of-concept study by probing three single-Transformer-block models across multiple domains to investigate the influence of individual layers on prediction trajectories. Our analysis shows that the probability transformations across layers tend to exhibit intra-layer cohesion, inter-layer correlation, and partially concept-driven structure. We present our work as a foundation for physics-inspired methods to be leveraged towards a broader understanding of Transformers.
 
+## Setup
+### Prerequistes
+- NVIDIA GPU with CUDA support for faster processing (strongly advised)
+
+### Step by step instructions
+1. **Cloning the repository:**
+   ```bash
+   git clone [https://github.com/g2116201/QLens.git](https://github.com/g2116201/QLens.git)
+   cd QLens
+2. **Creating and activating a virtual environment:**
+   
+    <ins>If using venv:</ins>
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+
+    <ins>If conda is preinstalled (recommended):</ins>
+    ```bash
+    # Create the environment with a specific Python version
+    conda create --name qlens python=3.14 -y
+    
+    # Activate the environment
+    conda activate qlens
+    ```
+3. **Installing dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
 ## Repository Layout
 The contents of this repositiory are divided into three overarching folders, each of which contains code for one of the three datasets used to test QLens:
 - `Sentihood/`
 - `Amazon_Books/`
 - `Tiny_Stories/`
+
 Within each folder, the numbered Jupiter notebooks can be run in sequence to reproduce the results from each of the experiments.
 
 ### Sentihood Folder
