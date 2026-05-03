@@ -8,6 +8,7 @@ The contents of this repositiory are divided into three overarching folders, eac
 - `Sentihood/`
 - `Amazon_Books/`
 - `Tiny_Stories/`
+Within each folder, the numbered Jupiter notebooks can be run in sequence to reproduce the results from each of the experiments.
 
 ### Sentihood Folder
 The `Sentihood/` folder contains experiments conducted on the [Sentihood](https://aclanthology.org/C16-1146.pdf) sentiment classification dataset. Its substructure breaks down as follows:
