@@ -10,8 +10,9 @@ This repository contains the code for the developing quantum-inspired interpreta
 ### Step by step instructions
 1. **Cloning the repository:**
    ```bash
-   git clone [https://github.com/g2116201/QLens.git](https://github.com/g2116201/QLens.git)
+   git clone https://github.com/g2116201/QLens.git
    cd QLens
+   ```
 2. **Creating and activating a virtual environment:**
    
     <ins>If using venv:</ins>
