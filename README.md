@@ -47,7 +47,7 @@ The `Sentihood/` folder contains experiments conducted on the [Sentihood](https:
 
 **Jupyter Notebooks**: This sequence of notebooks split the code into multiple thematic segments. 
 - `001_Sentihood_Data_Preprocessing.iypnb`: Simplifies task to simple positive or negative sentiment prediction.
-- `002_Sentihood_Model_Training.iypnb`: Trains a base Transformer comprising of one encoder block on the preprocessed Sentihood dataset.
+- `002_Sentihood_Model_Training.iypnb`: Trains a base Transformer comprising of one decoder block on the preprocessed Sentihood dataset.
 - `003_Sentihood_Lens_Training.iypnb`: Prepares two Tuned Lenses for extracting intermediate output probability distributions from the Sentihood Transformer.
 - `004_Sentihood_Quantum_Analysis.iypnb`: Employs QLens' mathematical framework to derive and analyze analogous quantum vectors and operators extracted from the Sentihood Transformer.
 
@@ -69,7 +69,7 @@ The `Sentihood/` folder contains experiments conducted on the [Sentihood](https:
 The `Amazon_Books/` folder contains experiments conducted on the [Amazon Books](https://aclanthology.org/D19-1018.pdf) recommendation dataset, a subset of the larger Amazon Review dataset. Substructure:
 
 **Jupyter Notebooks**:
-- `001_Books_Model_Training.iypnb`: Prepocesses a subset of the 50,000 most active users to 5-core and trains a Transformer (self-attentive sequential recommender) with one encoder block on the resulting corupus.
+- `001_Books_Model_Training.iypnb`: Prepocesses a subset of the 50,000 most active users to 5-core and trains a Transformer (self-attentive sequential recommender) with one decoder block on the resulting corupus.
 - `002_Books_Lens_Training.iypnb`: Prepares two Tuned Lenses for extracting intermediate probability distributions from the Amazon Books model.
 - `003_Books_Quantum_Analysis.iypnb`: Implements QLens' mathematical framework on the Amazon Books model.
   
